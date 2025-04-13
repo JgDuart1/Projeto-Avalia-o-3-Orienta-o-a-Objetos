@@ -1,4 +1,4 @@
-package com.Avaliacao3.Feedback.Model;
+package com.Avaliacao3.Feedback.model;
 
 /**
  * Classe que representa um Feedback de aula enviado por um aluno.

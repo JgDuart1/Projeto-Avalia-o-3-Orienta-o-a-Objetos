@@ -1,7 +1,8 @@
 package com.Avaliacao3.Feedback.repository;
 
-import com.Avaliacao3.Feedback.Model.Feedback;
 import org.springframework.stereotype.Repository;
+
+import com.Avaliacao3.Feedback.model.Feedback;
 
 import java.util.ArrayList;
 import java.util.List;

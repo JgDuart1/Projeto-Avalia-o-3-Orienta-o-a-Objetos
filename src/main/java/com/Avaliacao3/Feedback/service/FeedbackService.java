@@ -1,7 +1,8 @@
 package com.Avaliacao3.Feedback.service;
 
-import com.Avaliacao3.Feedback.Model.Feedback;
+import com.Avaliacao3.Feedback.model.Feedback;
 import com.Avaliacao3.Feedback.repository.FeedbackRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
