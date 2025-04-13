@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Lista de Feedbacks</title>
+</head>
+<body>
+    <h1>Feedbacks Recebidos</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Aluno</th>
+            <th>Disciplina</th>
+            <th>Comentário</th>
+            <th>Nota</th>
+        </tr>
+        <tr th:each="fb : ${feedbacks}">
+            <td th:text="${fb.id}"></td>
+            <td th:text="${fb.nomeAluno}"></td>
+            <td th:text="${fb.disciplina}"></td>
+            <td th:text="${fb.comentario}"></td>
+            <td th:text="${fb.nota}"></td>
+        </tr>
+    </table>
+
+    <br/>
+    <a href="/feedback/form">Voltar ao formulário</a>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Enviar Feedback</title>
+</head>
+<body>
+    <h1>Enviar Feedback de Aula</h1>
+    <form th:action="@{/feedback}" th:object="${feedback}" method="post">
+        <label>Nome do Aluno:</label><br/>
+        <input type="text" th:field="*{nomeAluno}" required/><br/><br/>
+
+        <label>Disciplina:</label><br/>
+        <input type="text" th:field="*{disciplina}" required/><br/><br/>
+
+        <label>Comentário:</label><br/>
+        <textarea th:field="*{comentario}" required></textarea><br/><br/>
+
+        <label>Nota (0 a 10):</label><br/>
+        <input type="number" th:field="*{nota}" min="0" max="10" required/><br/><br/>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <br/>
+    <a href="/feedback/lista">Ver todos os feedbacks</a>
+</body>
+</html>
