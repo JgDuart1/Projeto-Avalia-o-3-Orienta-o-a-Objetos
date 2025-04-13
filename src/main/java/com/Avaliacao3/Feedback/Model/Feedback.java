@@ -12,7 +12,7 @@ public class Feedback {
     private String comentario;
     private int nota;
 
-    // Construtor padrão (obrigatório para frameworks)
+    // Construtor padrão 
     public Feedback() {}
 
     // Construtor com todos os atributos

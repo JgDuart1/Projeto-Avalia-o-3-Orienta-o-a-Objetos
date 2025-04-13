@@ -27,13 +27,13 @@ public class WebController {
 
     @PostMapping("/feedback")
     public String salvarFeedback(@ModelAttribute Feedback feedback) {
-        feedbackService.salvarFeedback(feedback); // <- corrigido
+        feedbackService.salvarFeedback(feedback); 
         return "redirect:/feedback/lista";
     }
 
     @GetMapping("/feedback/lista")
     public String listarFeedbacks(Model model) {
-        model.addAttribute("feedbacks", feedbackService.listarFeedbacks()); // <- corrigido
+        model.addAttribute("feedbacks", feedbackService.listarFeedbacks());
         return "lista";
 }
 }
